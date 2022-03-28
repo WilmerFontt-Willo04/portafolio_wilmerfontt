@@ -24,7 +24,7 @@ const Index = () => (
               <BackgroundAnimation className="relative" />
               <span className="absolute fixed-top">
                 <h1>Wilmer Fontt</h1>
-                <h3>Full Stack Developer</h3>
+                <h3>Developer JavaScript_React_Next.js</h3>
                 <p className="">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Molestiae atque ullam perferendis harum, nisi porro voluptate,
