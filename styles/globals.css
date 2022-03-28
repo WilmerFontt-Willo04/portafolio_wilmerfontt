@@ -1,16 +1,295 @@
 html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
 }
 
-a {
-  color: inherit;
+.overflow {
+  height: 50%;
+  overflow: hidden;
+}
+
+.overflow .card-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.overflow .card-img-top:hover {
+  transform: scale(1.8);
+}
+
+#nprogress .bar {
+  background: #61ff53 !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #ffbb00;
+  border-left-color: #ffbb00;
+}
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-9 {
+  width: 2.5rem;
+}
+
+.w-10 {
+  width: 3rem;
+}
+
+.h-1 {
+  width: 0.25rem;
+}
+
+.h-2 {
+  width: 0.5rem;
+}
+
+.h-3 {
+  width: 0.75rem;
+}
+
+.h-4 {
+  width: 1rem;
+}
+
+.h-5 {
+  width: 1.25rem;
+}
+
+.h-6 {
+  width: 1.5rem;
+}
+
+.h-8 {
+  width: 2rem;
+}
+
+.h-9 {
+  width: 2.5rem;
+}
+
+.w-10 {
+  width: 3rem;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.tagsList {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+/* Footer */
+footer {
+  align-items: center;
+  background: #073642;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100px;
+  margin-top: 15px;
+  padding: 2px 50px;
+  position: relative;
+  width: 100%;
+}
+
+footer .social_icon,
+footer .menu {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0;
+  position: relative;
+}
+
+footer .social_icon li,
+footer .menu {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  display: inline-block;
+  font-size: 1.1em;
+  margin: 0 10px;
   text-decoration: none;
+  opacity: 0.7;
 }
 
-* {
-  box-sizing: border-box;
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer p {
+  font-size: 1.1em;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: 35px;
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(C:\Users\Wilmer\Desktop\Mi-Portafolio_Next.J-WilmerFontt\public\logo.svg);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .contactForm {
+  position: relative;
+  width: 700px;
+  margin-top: 20px;
+}
+
+.contact .contactForm .row {
+  width: 100%;
+  display: flex;
+}
+
+.contact .contactForm .row .col50 {
+  width: 47%;
+  margin: 10px;
+}
+
+.contact .contactForm .row .col100 {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+.contact .contactForm .row input,
+.contact .contactForm .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #094352;
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact .contactForm .form-group textarea {
+  height: 100px;
+}
+
+.contact .contactForm .row input[type="submit"] {
+  background: #12738b;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  max-width: 150px;
+  border-radius: 4px;
 }
