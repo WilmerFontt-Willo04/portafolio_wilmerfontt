@@ -24,7 +24,7 @@ const Post = () => {
           height={600}
         />
         <p className="p-4">{currentPost.content}</p>
-        <Link href="/blog">
+        <Link href="/blog" passHref>
           <button className="btn btn-dark">Return</button>
         </Link>
       </div>

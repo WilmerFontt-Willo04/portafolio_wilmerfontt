@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 
 import Navbar from "./Navbar";
 import PropTypes from "prop-types";
@@ -91,21 +92,21 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
               </li>
             </ul>
             <ul className="menu">
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/blog">Blog</a>
-              </li>
-              <li>
-                <a href="/technologies">Technologies</a>
-              </li>
-              <li>
-                <a href="/github">Github</a>
-              </li>
-              <li>
-                <a href="/contact">Contact</a>
-              </li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+              <Link href="/blog">
+                <a>Blog</a>
+              </Link>
+              <Link href="/technologies">
+                <a>Technologies</a>
+              </Link>
+              <Link href="/github">
+                <a>Github</a>
+              </Link>
+              <Link href="/contact">
+                <a>Contact</a>
+              </Link>
             </ul>
             <p className="text-success">
               &copy; 2021_@Willo04 | All Rights Reserved
