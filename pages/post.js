@@ -16,7 +16,7 @@ const Post = () => {
     <Layout title={router.query.title} footer={false}>
       <div className="text-center">
         <Image
-          src={currentPost.imageURL}
+          src="/vercel.svg"
           alt="avatarpost"
           style={{ width: "50%" }}
           className="img-fluid"
