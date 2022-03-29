@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
+
 import Navbar from "./Navbar";
 import PropTypes from "prop-types";
 import NProgress from "nprogress";
@@ -52,10 +54,12 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
               <div className="wave" id="wave4"></div>
             </div>
             <h5 className="mt-4 ml-5">
-              <img
+              <Image
                 src="/CarbonCopyCloner_2.png"
                 alt="copyright"
-                className="w-6 h-6 mr-3"
+                className="w-6 h-6"
+                width={25}
+                height={25}
               />
               Wilmer Fontt_Portafolio. &copy;
             </h5>
@@ -105,10 +109,12 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
             </ul>
             <p className="text-success">
               &copy; 2021_@Willo04 | All Rights Reserved
-              <img
+              <Image
                 src="/CarbonCopyCloner_2.png"
                 alt="copyright"
-                className="w-6 h-6 ml-2"
+                className="w-6 h-6"
+                width={25}
+                height={25}
               />
             </p>
           </footer>

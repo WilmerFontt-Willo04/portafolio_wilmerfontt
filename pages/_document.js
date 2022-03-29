@@ -5,14 +5,13 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Mi Portafolio </title>
           <meta name="description" content="Wilmer Fontt Portafolio Website" />
           {/* Normalize css */}
           <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-          integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
-          crossOrigin="anonymous"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+            crossOrigin="anonymous"
           />
           {/* Nprogress css */}
           <link

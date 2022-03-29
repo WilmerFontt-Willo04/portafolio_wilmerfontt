@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Image from "next/image";
 
 const Contacto = () => {
   return (
@@ -8,10 +9,12 @@ const Contacto = () => {
           <section className="bg-dark p-4">
             <div className="title">
               <h2 className="text-success mt-3">
-                <img
+                <Image
                   src="/contact_1.png"
                   alt="Foto Perfil"
                   className="w-9 h-9 mr-3"
+                  width={100}
+                  height={100}
                 />
                 Contact Us
               </h2>

@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Image from "next/image";
 
 const Technologies = () => {
   return (
@@ -9,68 +10,82 @@ const Technologies = () => {
             <div className="col-6">
               <ul className="list-group">
                 <li className="list-group-item d-flex bg-secondary">
-                  <img
-                    src="html.svg"
+                  <Image
+                    src="/html.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-dark rounded-lg"
+                    className="bg-dark rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dark"> *# ._ Html</h3>
                 </li>
                 <li className="list-group-item d-flex bg-dark">
-                  <img
-                    src="css.svg"
+                  <Image
+                    src="/css.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-secondary rounded-lg"
+                    className="bg-secondary rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dsecondary">
                     *# ._ Css
                   </h3>
                 </li>
                 <li className="list-group-item d-flex bg-secondary">
-                  <img
-                    src="bootstrap.svg"
+                  <Image
+                    src="/bootstrap.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-dark rounded-lg"
+                    className="bg-dark rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dark">
                     *# ._ Bootstrap
                   </h3>
                 </li>
                 <li className="list-group-item d-flex bg-dark">
-                  <img
-                    src="tailwind_icon.svg"
+                  <Image
+                    src="/tailwind_icon.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-secondary rounded-lg"
+                    className="bg-secondary rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dsecondary">
                     *# ._ Tailwind CSS
                   </h3>
                 </li>
                 <li className="list-group-item d-flex bg-secondary">
-                  <img
-                    src="javascript.svg"
+                  <Image
+                    src="/javascript.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-dark rounded-lg"
+                    className="bg-dark rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dark">
                     *# ._ Javascritp
                   </h3>
                 </li>
                 <li className="list-group-item d-flex bg-dark">
-                  <img
-                    src="react.svg"
+                  <Image
+                    src="/react.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-secondary rounded-lg"
+                    className="bg-secondary rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dsecondary">
                     *# ._ React
                   </h3>
                 </li>
                 <li className="list-group-item d-flex bg-secondary">
-                  <img
-                    src="next_js.svg"
+                  <Image
+                    src="/next_js.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-dark rounded-lg"
+                    className="bg-dark rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dark"> *# ._ Next.Js</h3>
                 </li>
@@ -80,38 +95,46 @@ const Technologies = () => {
             <div className="col-6">
               <ul className="list-group">
                 <li className="list-group-item d-flex bg-dark">
-                  <img
-                    src="typescript.svg"
+                  <Image
+                    src="/typescript.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-secondary rounded-lg"
+                    className="bg-secondary rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dsecondary">
                     *# ._ Typescript
                   </h3>
                 </li>
                 <li className="list-group-item d-flex bg-secondary">
-                  <img
-                    src="node.svg"
+                  <Image
+                    src="/node.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-dark rounded-lg"
+                    className="bg-dark rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dark"> *# ._ Node.Js</h3>
                 </li>
                 <li className="list-group-item d-flex bg-dark">
-                  <img
-                    src="git_icon.svg"
+                  <Image
+                    src="/git_icon.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-secondary rounded-lg"
+                    className="bg-secondary rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dsecondary">
                     *# ._ Git
                   </h3>
                 </li>
                 <li className="list-group-item d-flex bg-secondary">
-                  <img
-                    src="firebase.svg"
+                  <Image
+                    src="/firebase.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-dark rounded-lg"
+                    className="bg-dark rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dark">
                     {" "}
@@ -119,28 +142,34 @@ const Technologies = () => {
                   </h3>
                 </li>
                 <li className="list-group-item d-flex bg-dark">
-                  <img
-                    src="dart.svg"
+                  <Image
+                    src="/dart.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-secondary rounded-lg"
+                    className="bg-secondary rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dsecondary">
                     *# .- Dart
                   </h3>
                 </li>
                 <li className="list-group-item d-flex bg-secondary">
-                  <img
-                    src="flutter.svg"
+                  <Image
+                    src="/flutter.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-dark rounded-lg"
+                    className="bg-dark rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dark"> *# ._ Flutter</h3>
                 </li>
                 <li className="list-group-item d-flex bg-dark">
-                  <img
-                    src="npm.svg"
+                  <Image
+                    src="/npm.svg"
                     alt="Foto Technologie"
-                    className="w-9 h-9 mr-2 bg-secondary rounded-lg"
+                    className="bg-secondary rounded-lg"
+                    width={40}
+                    height={40}
                   />
                   <h3 className="d-flex mt-2 ml-2 text-dsecondary">
                     *# .- Npm

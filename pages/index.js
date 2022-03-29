@@ -1,5 +1,7 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
+import Image from "next/image";
+
 import * as Icon from "react-feather";
 import { skills, experiences, projects } from "../profile";
 import BackgroundAnimation from "../components/BackgroundAnimation";
@@ -13,11 +15,13 @@ const Index = () => (
         <div className="card card-body bg-dark text-light animate__animated animate__fadeIn">
           <div className="row">
             <div className="col-md-4">
-              <img
+              <Image
                 src="/foto_perfil.png
                 "
                 alt="Foto Perfil"
                 className="img-fluid"
+                width={600}
+                height={600}
               />
             </div>
             <div className="col-md-8">
@@ -115,11 +119,13 @@ const Index = () => (
             <div className="row">
               <div className="col-md-12 my-2">
                 <h1 className="text-center text-light">
-                  <img
+                  <Image
                     src="/portfolio_3.png"
                     alt="Foto Perfil"
-                    className="w-10 h-10 mr-3"
-                  />
+                    className="ms-3"
+                    width={50}
+                    height={50}
+                  />{" "}
                   My Personal Portfolio
                 </h1>
               </div>
@@ -128,18 +134,22 @@ const Index = () => (
                   <div className="col-md-4 p-2" key={index}>
                     <div className="card h-100">
                       <div className="overflow">
-                        <img
+                        <Image
                           src={`/${image}`}
                           alt="avatar proyect"
                           className="card-img-top"
+                          width={400}
+                          height={320}
                         />
                         <span className="">
                           {icons.map((icon, i) => (
-                            <img
-                              src={icon}
+                            <Image
+                              src={`/${icon}`}
                               alt="icon"
                               key={i}
                               className="w-8 h-8 mx-1 mt-1 text-right"
+                              width={32}
+                              height={32}
                             />
                           ))}
                         </span>

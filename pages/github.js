@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Error from "./_error";
+import Image from "next/image";
 
 const Github = ({ user, statusCode }) => {
   if (statusCode) {
@@ -12,32 +13,27 @@ const Github = ({ user, statusCode }) => {
         <div className="col-md-4 offset-md-4">
           <div className="card card-body text-center">
             <h3>
-              <img
+              <Image
                 src="/github_icon_1.png"
                 alt="Foto Perfil"
-                className="w-8 h-8 mr-1 mb-2"
+                className="mr-1 mb-2"
+                width={60}
+                height={60}
               />
               {user.name}
             </h3>
-            <img
-              src={user.avatar_url}
+            <Image
+              src="/avatar-tec.png"
               alt=""
-              style={{ width: "100%" }}
               className="rounded-circle"
+              width={500}
+              height={500}
             />
             <p className="text-success my-3">{user.bio}</p>
-            <a
-              href={user.blog}
-              target="_blank"
-              className="btn btn-outline-secondary my-2"
-            >
+            <a href={user.blog} className="btn btn-outline-secondary my-2">
               My Blog
             </a>
-            <a
-              href={user.html_url}
-              target="_blank"
-              className="btn btn-outline-secondary"
-            >
+            <a href={user.html_url} className="btn btn-outline-secondary">
               Go to Github
             </a>
           </div>

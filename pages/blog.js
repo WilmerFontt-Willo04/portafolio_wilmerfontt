@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
+import Image from "next/image";
 
 import { posts } from "../profile";
 
@@ -7,7 +8,12 @@ const PostCard = ({ post }) => (
   <div className="col-md-4">
     <div className="card">
       <div className="overflow">
-        <img src={post.imageURL} alt="" className="card-img-top" />
+        <Image
+          src="/vercel.svg"
+          alt="Picture of the author"
+          width={500}
+          height={500}
+        />
       </div>
       <div className="card-body">
         <h1>{post.title}</h1>

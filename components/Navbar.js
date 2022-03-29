@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+
 import * as Icon from "react-feather";
 import { DiCssdeck } from "react-icons/di";
 import { FaBlog } from "react-icons/fa";
@@ -8,10 +10,12 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <img
+        <Image
           src="/services-portfolio-icon.png"
           alt="Foto Perfil"
-          className="w-9 h-9 mr-3"
+          className="w-9 h-9"
+          width={50}
+          height={50}
         />
         <Link href="/">
           <a className="navbar-brand">
