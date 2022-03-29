@@ -16,12 +16,12 @@ const Post = () => {
     <Layout title={router.query.title} footer={false}>
       <div className="text-center">
         <Image
-          src={currentPost.imageURL}
+          src={currentPost?.imageURL}
           alt="avatarpost"
           width={300}
           height={300}
         />
-        <p className="p-4">{currentPost.content}</p>
+        <p className="p-4">{currentPost?.content}</p>
         <Link href="/blog" passHref>
           <button className="btn btn-dark">Return</button>
         </Link>
