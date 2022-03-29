@@ -9,10 +9,10 @@ const PostCard = ({ post }) => (
     <div className="card">
       <div className="overflow">
         <Image
-          src="/vercel.svg"
+          src={post.imageURL}
           alt="Picture of the author"
-          width={500}
-          height={500}
+          width={400}
+          height={350}
         />
       </div>
       <div className="card-body">
