@@ -28,6 +28,7 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
     return () => {
       router.events.off("routeChangeStart", handleRouteChange);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

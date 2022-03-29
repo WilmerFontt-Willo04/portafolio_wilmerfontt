@@ -12,9 +12,8 @@ const Contacto = () => {
                 <Image
                   src="/contact_1.png"
                   alt="Foto Perfil"
-                  className="w-9 h-9 mr-3"
-                  width={100}
-                  height={100}
+                  width={60}
+                  height={60}
                 />
                 Contact Us
               </h2>

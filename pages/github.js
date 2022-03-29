@@ -14,12 +14,11 @@ const Github = ({ user, statusCode }) => {
           <div className="card card-body text-center">
             <h3>
               <Image
-                src="/github_icon_1.png"
+                src="/github.svg"
                 alt="Foto Perfil"
-                className="mr-1 mb-2"
-                width={60}
-                height={60}
-              />
+                width={50}
+                height={50}
+              />{" "}
               {user.name}
             </h3>
             <Image
